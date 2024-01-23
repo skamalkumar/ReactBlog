@@ -1,5 +1,6 @@
-import { Avatar } from "@material-ui/core";
+// import { Avatar } from "@material-ui/core";
 import { GiHappySkull } from "react-icons/gi";
+import { RxAvatar } from "react-icons/rx";
 import React, { useState } from "react";
 import { FcCamcorder } from "react-icons/fc";
 import { GoogleLogout } from "react-google-login";
@@ -52,7 +53,7 @@ const Navbar = () => {
 
       {isSignedIn ? (
         <div className="navbar__user__data">
-          <Avatar
+          <RxAvatar
             className="user"
             src={userData?.imageUrl}
             alt={userData?.name}
